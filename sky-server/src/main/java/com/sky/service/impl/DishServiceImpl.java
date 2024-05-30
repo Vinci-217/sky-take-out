@@ -48,7 +48,6 @@ public class DishServiceImpl implements DishService {
      * @param dishDTO
      */
     @Transactional
-    @Override
     public void saveWithFlavor(DishDTO dishDTO) {
         Dish dish = new Dish();
         BeanUtils.copyProperties(dishDTO, dish);
